@@ -1,0 +1,32 @@
+<!DOCTYPE HTML> 
+<html> 
+<head> 
+<style> 
+div{ 
+text-align: left; 
+font-size: 26px; 
+} 
+</style> 
+</head> 
+<body> 
+<div id="countdown"></div> 
+<script> 
+var timeleft = 3;
+var downloadTimer = setInterval(function(){
+  if(timeleft <= 0){
+    clearInterval(downloadTimer);
+    document.getElementById("countdown").innerHTML = "Time Up";
+  } else {
+    document.getElementById("countdown").innerHTML = timeleft ;
+  }
+  timeleft -= 1;
+},1000);
+
+
+</script> 
+
+
+</body> 
+</html> 
+
+
