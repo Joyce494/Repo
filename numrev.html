@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Functionality of using Functions</title>
+        <script>
+           
+            
+            
+            function evenNo(n){
+               if(n%2==0)
+               {
+                   document.write(+n+" "+"is even"+"</br>");
+               }
+               else{
+                document.write(+n+" "+"is odd"+"</br>");
+               }
+            }
+            var posNo=function(n){
+                if(n>=0)
+                {
+                    document.write(+n+" "+"is positive number"+"</br>");
+                }
+                else{
+                    document.write(+n+" "+"is negative number"+"</br>");
+                }
+            }
+            let primeNo=(n)=>{
+                flag=0;i=2;
+                while(i<=n/2)
+                {
+                    if(n%i==0)
+                    {
+                        flag=1;
+                        break;
+                    }
+                    i++;
+                }
+                if(flag==0)
+                {
+                    document.write(+n+" "+"is a prime number "+"</br>");
+                }
+                else
+                {
+                    document.write(+n+" "+"is a prime number "+"</br>");
+                }
+            }
+            function divNo(n){
+               if(n%5==0)
+               {
+                document.write(+n+" "+"is divisible by 5 "+"</br>");
+               }
+               else
+               {
+                document.write(+n+" "+"is not divisible by 5 "+"</br>"); 
+               }
+            }
+            function lucNo(){
+                while(n>9)
+                {
+                    let rem=n%10;
+                    n=n/10;
+                    n=n+rem;
+                }
+                document.write(+n+" "+"is a lucky number"+"</br>");
+            }
+            var n=parseInt(window.prompt("Enter n: "));
+            
+            var po=posNo(n);
+            var ev=evenNo(n);
+            var pr=primeNo(n);
+            var re=divNo(n);
+            var lu=lucNo(n);
+            
+
+        </script>      
+    </head>
+    <body>
+        
+    </body>
+</html>
